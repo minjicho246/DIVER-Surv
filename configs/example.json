@@ -1,0 +1,12 @@
+{
+  "ucsf_csv_path": "/path/to/ucsf/metadata.csv",
+  "ucsf_img_dir": "/path/to/ucsf/images",
+  "upenn_csv_path": "/path/to/upenn/metadata.csv",
+  "upenn_img_dir": "/path/to/upenn/images",
+  "rhuh_csv_path": "/path/to/rhuh/metadata.csv",
+  "rhuh_img_dir": "/path/to/rhuh/images",
+  "output_root": "./outputs",
+  "cache_root": "./cache",
+  "wandb_entity": null,
+  "wandb_project": "DIVER-Surv"
+}
