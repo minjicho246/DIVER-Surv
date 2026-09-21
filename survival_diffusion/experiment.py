@@ -131,7 +131,7 @@ def run_experiments(args, runtime):
                 "fusion_num_layers": args.fusion_num_layers,
                 "fusion_num_heads": args.fusion_num_heads,
                 "survival_t_max": args.survival_t_max,
-                "code_version": "public-paper-release",
+                "code_version": "public-release",
             },
         )
 
@@ -219,7 +219,7 @@ def run_experiments(args, runtime):
 
             external_loaders[target] = get_loader(items, target, test_aug)
 
-        # Construct the paper architecture.
+        # Construct the configured architecture.
         img_model = DiffusionImageEncoder3D(
             in_channels=4,
             latent_dim=128,

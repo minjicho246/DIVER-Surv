@@ -7,7 +7,7 @@ from .settings import load_runtime_config
 
 
 def build_parser():
-    """Build the training CLI with the paper configuration as defaults."""
+    """Build the training CLI with the published configuration as defaults."""
     parser = argparse.ArgumentParser(
         description="Train DIVER-Surv on the UPENN and UCSF source cohorts.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
@@ -65,7 +65,7 @@ def build_parser():
         "--fusion_num_heads", type=int, default=8, help="Attention heads per transformer layer."
     )
 
-    objective = parser.add_argument_group("Paper objective")
+    objective = parser.add_argument_group("Training objective")
     objective.add_argument(
         "--lambda_diff", type=float, default=0.2, help="Diffusion-loss coefficient."
     )

@@ -130,7 +130,7 @@ def train_model(
                 )
                 batch_diffusion = 0.5 * (diffusion_branch_1 + diffusion_branch_2)
 
-                # Survival views sample from the paper's small timestep range [0, Ts].
+                # Survival views sample from the configured timestep range [0, Ts].
                 survival_branch_1 = encode_survival_view(images)
                 survival_branch_2 = encode_survival_view(images)
                 scores_1, _ = survmodel(survival_branch_1["img_emb"], texts)
