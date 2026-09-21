@@ -1,0 +1,46 @@
+# Python and development environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Local configuration and credentials
+.env
+.env.*
+configs/local.json
+configs/*.local.json
+.netrc
+
+# Datasets, checkpoints, and generated artifacts
+data/
+datasets/
+!survival_diffusion/data/
+!survival_diffusion/data/**
+outputs/
+results/
+cache/
+cache_monai/
+wandb/
+*.nii
+*.nii.gz
+*.dcm
+*.csv
+*.tsv
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.log
+
+# Editor and operating system files
+.DS_Store
+.idea/
+.vscode/

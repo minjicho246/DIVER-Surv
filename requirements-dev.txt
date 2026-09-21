@@ -1,0 +1,3 @@
+# Only formatting and static checks; stdlib unittest needs no extra dependency.
+black
+ruff

@@ -1,0 +1,11 @@
+# Original runtime dependencies; no version lock was supplied with the source.
+# Install a PyTorch build appropriate for your hardware.
+torch
+numpy
+pandas
+monai
+nibabel
+lifelines
+sentence-transformers
+scikit-learn
+wandb
